@@ -33,3 +33,5 @@ RUN echo "http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositor
     pecl install apcu-5.1.11 && \
     docker-php-ext-enable apcu && \
     composer self-update
+
+COPY php.ini /usr/local/etc/php/
