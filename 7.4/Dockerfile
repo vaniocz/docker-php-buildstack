@@ -32,6 +32,6 @@ RUN echo "http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositor
     docker-php-ext-install zip intl gd opcache && \
     pecl install apcu-5.1.19 && \
     docker-php-ext-enable apcu && \
-    composer self-update
+    composer self-update --1
 
 COPY php.ini /usr/local/etc/php/
